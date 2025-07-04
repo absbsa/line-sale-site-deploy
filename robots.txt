@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://absbsa.github.io/line-sale-site-deploy/sitemap.xml
