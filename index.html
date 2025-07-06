@@ -16,11 +16,40 @@
     h1 { font-size: 26px; }
     .desc { margin: 10px 0; font-size: 16px; }
     .cards { display: flex; flex-wrap: wrap; justify-content: center; }
-    .card { background: white; padding: 20px; border-radius: 12px; margin: 10px; width: 200px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center; }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 10px;
+      width: 280px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-align: left;
+    }
     .card:hover { background: #e8f9ff; }
-    .card a { text-decoration: none; color: black; font-weight: bold; display: block; }
-    .card img { width: 40px; height: 40px; margin-bottom: 10px; }
-    .price { margin-top: 10px; font-size: 15px; color: #444; }
+    .card a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    .card img {
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+    }
+    .text-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .price {
+      margin-top: 4px;
+      font-size: 15px;
+      color: #444;
+      font-weight: normal;
+    }
     .qr-contact img { width: 80px; }
     .qr-contact { margin-top: 40px; }
     .seo-text { font-size: 14px; color: #444; margin: 30px auto; max-width: 600px; text-align: left; }
@@ -34,30 +63,38 @@
   <div class="cards">
     <div class="card">
       <a href="hk.html">
-        <img src="https://cdn.jsdelivr.net/gh/absbsa/absbsa.github.io@latest/line-hk.png">
-        HK 香港 Line
-        <div class="price">￥30 元 / 个</div>
+        <img src="https://cdn.jsdelivr.net/gh/absbsa/absbsa.github.io@latest/line-hk.png" alt="HK Line">
+        <div class="text-wrap">
+          HK 香港 Line
+          <div class="price">￥30 元 / 个</div>
+        </div>
       </a>
     </div>
     <div class="card">
       <a href="th.html">
-        <img src="https://cdn.jsdelivr.net/gh/absbsa/absbsa.github.io@latest/line-th.png">
-        TH 泰国 Line
-        <div class="price">￥60 元 / 个</div>
+        <img src="https://cdn.jsdelivr.net/gh/absbsa/absbsa.github.io@latest/line-th.png" alt="TH Line">
+        <div class="text-wrap">
+          TH 泰国 Line
+          <div class="price">￥60 元 / 个</div>
+        </div>
       </a>
     </div>
     <div class="card">
       <a href="tw.html">
-        <img src="https://cdn.jsdelivr.net/gh/absbsa/absbsa.github.io@latest/line-tw.png">
-        TW 台湾 Line
-        <div class="price">￥500 元 / 个</div>
+        <img src="https://cdn.jsdelivr.net/gh/absbsa/absbsa.github.io@latest/line-tw.png" alt="TW Line">
+        <div class="text-wrap">
+          TW 台湾 Line
+          <div class="price">￥500 元 / 个</div>
+        </div>
       </a>
     </div>
     <div class="card">
       <a href="line.html">
-        <img src="https://cdn.jsdelivr.net/gh/absbsa/absbsa.github.io@latest/line-apk.png">
-        📥 下载 LINE 安卓安装包
-        <div class="price">阿里云盘跳转</div>
+        <img src="https://cdn.jsdelivr.net/gh/absbsa/absbsa.github.io@latest/line-apk.png" alt="APK Download">
+        <div class="text-wrap">
+          📥 下载 LINE 安卓安装包
+          <div class="price">阿里云盘跳转</div>
+        </div>
       </a>
     </div>
   </div>
