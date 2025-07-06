@@ -18,37 +18,39 @@
     .cards { display: flex; flex-wrap: wrap; justify-content: center; }
     .card {
       background: white;
-      padding: 14px 16px;
+      padding: 12px 14px;
       border-radius: 12px;
       margin: 10px;
-      width: 260px;
+      width: 240px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
       text-align: left;
     }
     .card:hover { background: #e8f9ff; }
     .card a {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: start;
+      column-gap: 10px;
       text-decoration: none;
       color: black;
       font-weight: bold;
     }
     .card img {
-      width: 36px;
-      height: 36px;
+      width: 34px;
+      height: 34px;
+      margin-top: 2px;
       flex-shrink: 0;
     }
     .text-wrap {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      line-height: 1.4;
+      justify-content: flex-start;
+      line-height: 1.3;
     }
     .price {
       margin-top: 2px;
-      font-size: 14px;
-      color: #444;
+      font-size: 13px;
+      color: #666;
       font-weight: normal;
     }
     .qr-contact img { width: 80px; }
